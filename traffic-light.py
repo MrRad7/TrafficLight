@@ -3,12 +3,13 @@
 """ Read 10 coils and print result on stdout. """
 
 import logging
-import time
+import queue
 import threading
+import time
 import tkinter as tk
+
 from PIL import Image, ImageTk  # Optional, for PNG/JPG support
 from pyModbusTCP.client import ModbusClient
-import queue 
 
 #elements for controller 
 RED = 0  #QX0.0
